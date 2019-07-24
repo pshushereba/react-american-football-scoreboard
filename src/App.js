@@ -1,5 +1,5 @@
 //TODO: STEP 1 - Import the useState hook.
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 
@@ -37,6 +37,9 @@ function App() {
         <div className="awayButtons">
           <button onClick={ () => updateAway(awayScore += 7)} className="awayButtons__touchdown">Away Touchdown</button>
           <button onClick={ () => updateAway(awayScore += 3)} className="awayButtons__fieldGoal">Away Field Goal</button>
+        </div>
+        <div className="quarterButton">
+          <button>Change Quarter</button>
         </div>
       </section>
     </div>
